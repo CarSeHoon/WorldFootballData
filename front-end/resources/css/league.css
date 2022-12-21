@@ -1,0 +1,418 @@
+@charset "UTF-8";
+
+.match_schedule {
+	width: 100%;
+	height: 130px;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.match_day {
+	text-align: center;
+}
+
+.match_vs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0;
+	width:280px;
+}
+
+.match_score {
+	width: 50%;
+	margin: 0 20px;
+	text-align: center;
+	display:flex;
+	justify-content: space-evenly;
+	font-size: 50px;
+}
+
+.team_emblem {
+	width: 40%;
+	text-align: center;
+}
+
+.team_logo {
+	width: 50px;
+	height: 50px;
+}
+
+.match_time {
+	text-align: center;
+	position: absolute;
+	top: 80%;
+}
+
+.owl-item{
+	width: 400px;
+	display:flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+
+.testimonial-item.equal-height.style-6 {
+	background-color: #eee;
+	border-radius: 10px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.testimonial-content.quote {
+	padding: 17px 55px;
+}
+
+.et_right_sidebar #main-content .container:before {
+	display: none;
+}
+
+.match_info_box {
+	background:
+		url(https://portal.kleague.com/images/portal/img-bg-login3.png)
+		no-repeat bottom;
+	background-color: #0b0e12;
+	padding-bottom: 30px;
+	min-height: 680px;
+	background-size: cover;
+	margin-bottom: 20px;
+	padding-top: 15px;
+	display: none;
+	width: 97%;
+	margin-left: 30px;
+	border-radius: 20px;
+}
+
+.match_info_top{
+	display:flex;
+	padding: 0 10%;
+	height: 80px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.match_info_top_home, .match_info_top_away{
+	width: 50%;
+	height: 100px;
+	color: white;
+	
+}
+
+.match_info_top_home{
+	border-right: 1px solid grey;
+}
+
+.match_info_home_detail, .match_info_away_detail{
+	display: flex;
+}
+
+.match_home_info_img, .match_away_info_img{
+	width:20%;
+	height: 100px;
+}
+
+.match_home_info_formation, .match_away_info_formation{
+	width:30%;
+	height:100px;
+	padding-top: 70px;
+	text-align: center;
+}
+
+.match_home_info_name, .match_away_info_name{
+	width: 100%;
+	height: 100px;
+	padding-top: 40px;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+.match_home_info_goal, .match_away_info_goal{
+	width: 25%;
+	height: 100px;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+.match_info_detail{
+	width: 100%;
+    height: 850px;
+    background: url(/resources/img/field.jpeg) no-repeat 100%;
+    background-size: 80% 90%;
+    background-position: center;
+    display: flex;
+    padding: 0 13%;
+}
+
+.match{
+	display: flex;
+	height: 100%;
+}
+
+.match_home, .match_away{
+	width:50%;
+	height: 100%;
+}
+
+
+.match_team_emblem{
+	width: 100px;
+	height:100px;
+}
+
+
+.rank_info_box{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.team_rank_box{
+	width: 100%;
+}
+
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  height: 900px;
+}
+th,
+td {
+  padding: 6px 15px;
+}
+th {
+  background: #42444e;
+  color: #fff;
+}
+tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+td {
+  border-right: 1px solid #c6c9cc;
+  border-bottom: 1px solid #c6c9cc;
+ 
+}
+td:first-child {
+  border-left: 1px solid #c6c9cc;
+   background: #eaeaed;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+
+.personal_data_box{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.data_visibility_box{
+	width:100%;
+	display: flex;
+}
+
+.match_detail_chart{
+	width: 100%;
+	height: 475px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	padding: 0 10%;
+}
+
+.player_info{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.goalkeeperBox, .defendersBox, .midfieldersBox, .forwardsBox, .strikerBox, .defendermidfieldersBox{
+	display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.goalkeeperBox, .strikerBox{
+	justify-content: center;
+}
+
+.player_imgBox{
+	border-radius: 50%;
+	width: 33%;
+	margin-left: 5px;
+}
+
+.player_no, .player_name{
+	text-align: center;
+}
+
+.player_personal_info{
+	display: flex;
+	color: white;
+}
+
+.player_img{
+	width:100%;
+	border-radius: 50%;
+	height: 100%;
+}
+
+
+
+.home_tooltip_content, .away_tooltip_content{
+	width: 180px;
+	background-color: orange;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	visibility: hidden;
+}
+
+
+.tooltip:hover .home_tooltip_content, .tooltip:hover .away_tooltip_content{
+	visibility: visible;
+}
+
+
+#chartdiv, #chartdiv2, #chartdiv3, #chartdiv4, #chartdiv5 {
+  width: 20%;
+  height: 300px;
+}
+
+
+
+#wordcloud {
+  width: 90%;
+  height: 500px;
+  background-color: #eeeeee;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+#bubblechart{
+	width: 90%;
+	height: 500px;
+	background-color: #eeeeee;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+#barchartdiv{
+	width:97%;
+	height: 500px;
+	background-color: #eeeeee;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+#piechart{
+	width: 66%;
+	height: 500px;
+	background-color: #eeeeee;
+    border-radius: 20px;
+    margin: 30px;
+}
+#barchart{
+   width: 100%;
+   height: 450px;
+}
+
+
+
+
+.pieandbar{
+	display: flex;
+	width: 100%;
+}
+
+.barchartTitle {
+   text-align: center;
+   font-size: 30px;
+   margin-top: 5px;
+}
+
+.outer-barchart{
+   width: 33%;
+   height: 500px;
+   background-color: #eeeeee;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.match_homeaway_title{
+	width: 100%;
+}
+
+.match_home_title_homeaway{
+	position: absolute;
+	margin-left: 8.5%;
+	font-size: 20px;
+}
+
+.coment{
+	position: absolute;
+    left: 70px;
+}
+
+span{
+	font-size: 45px;
+}
+
+.chartcolor{
+	position: absolute;
+    width: 20%;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    left: 200px;
+    margin-top: 10px;
+}
+
+.homecolor, .awaycolor{
+	width: 20px;
+	height: 20px;
+	border-radius: 6px;
+    margin-right: 15px;
+}
+
+.homecolor{
+	background-color: #7D5A50;
+}
+
+.awaycolor{
+	background-color: #B4846C;
+	margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

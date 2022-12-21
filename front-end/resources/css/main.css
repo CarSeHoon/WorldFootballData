@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+.container{
+	padding: 1.5%;
+}
+
+.topNewsAndMap{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.main_news_box{
+	overflow: hidden;
+    position: relative;
+    margin: 0 0 20px 0;
+    height: 340px;
+    display: flex;
+  	align-items: center;
+  	flex-direction: column;
+  	width: 63%;
+}
+
+.icon-cards {
+  position: relative;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  margin: 0;
+  color: white;
+  perspective: 1000px;
+  transform-origin: center;
+  margin-top: 20px;
+}
+
+.icon-cards__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: translateZ(-30vw) rotateY(0);
+  animation: carousel 30s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.icon-cards__content.step-animation {
+  animation: carousel 8s infinite steps(1) forwards;
+}
+.icon-cards__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60vw;
+  height: 40vw;
+  width: 500px;
+  height: 300px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transform-origin: center;
+  overflow: hidden;
+}
+
+.icon-cards__item a img{
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+
+.text_box{
+	position: absolute;
+	top:50%;
+	left:50%;
+	width:100%;
+	font-size: 20px;
+	color: white;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.icon-cards__item a:hover img, .icon-cards__item a:focus img{
+	transform: scale(1.2);
+} 
+
+.icon-cards__item:nth-child(1) {
+  transform: rotateY(0) translateZ(35vw);
+}
+.icon-cards__item:nth-child(2) {
+  transform: rotateY(60deg) translateZ(35vw);
+}
+.icon-cards__item:nth-child(3) {
+  transform: rotateY(120deg) translateZ(35vw);
+}
+.icon-cards__item:nth-child(4) {
+  transform: rotateY(180deg) translateZ(35vw);
+}
+.icon-cards__item:nth-child(5) {
+  transform: rotateY(240deg) translateZ(35vw);
+}
+.icon-cards__item:nth-child(6) {
+  transform: rotateY(300deg) translateZ(35vw);
+}
+
+@keyframes carousel {
+  0%, 12% {
+    transform: translateZ(-35vw) rotateY(0);
+  }
+  17%, 29% {
+    transform: translateZ(-35vw) rotateY(-60deg);
+  }
+  34%, 46% {
+    transform: translateZ(-35vw) rotateY(-120deg);
+  }
+  51%, 63% {
+    transform: translateZ(-35vw) rotateY(-180deg);
+  }
+  68%, 80% {
+    transform: translateZ(-35vw) rotateY(-240deg);
+  }
+  85%, 100% {
+    transform: translateZ(-35vw) rotateY(-300deg);
+  }
+}
+
+@keyframes jelly {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.content{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.news_box{
+	width: 63%;
+	height: 500px;
+	background-color: #eeeeee;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.today_news_title, .today_match_title{
+	width:100%;
+	text-align:center;
+}
+
+.news_list_box{
+	overflow: scroll;
+	height: 420px;
+}
+
+.news{
+	padding: 30px 30px;
+}
+
+.news_link{
+	display: table;
+    width: 100%;
+    table-layout: fixed;
+    text-decoration: none;
+}
+
+.img_area{
+	overflow: hidden;
+    display: table-cell;
+    position: relative;
+    width: 160px;
+    height: 95px;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.img_area img{
+	width:100%;
+	height:100%;
+	background-color:black;
+	transition: 0.3s;
+	border-radius: 10px;
+}
+
+.img_area img:hover, .img_area img:focus{
+	transform: scale(1.2);
+}
+
+
+.text_area {
+    display: table-cell;
+    padding: 0 20px;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+}
+
+.today_match_box{
+	width: 33%;
+	background-color: #eeeeee;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+
+.league_box{ 
+	display:flex;
+	justify-content: right;
+	height: 25px;
+	padding-right: 20px;
+}
+
+#selectbox{
+	width: 25%;
+	text-align: center;
+}
+
+.today_match_list{
+	overflow: scroll;
+	height: 370px;
+}
+
+.today_match{
+	width:100%;
+	height:60px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.today_match_home, .today_match_away{
+	width: 40%;
+	text-align:center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.match_time{
+	width:20%;
+	text-align:center;
+}
+
+
+.team_emblem{
+	align-items: center;
+}
+
+
+#mapdiv{
+	width: 33%;
+	height: 340px;
+	background-color: #eeeeee;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
